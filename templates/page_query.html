@@ -1,0 +1,32 @@
+<!doctype html>
+
+<body bgcolor="white">
+<title>My search page!</title>
+<style>
+dd {
+    width:100%
+}
+</style>
+<div style="width:100%">
+<h3 style="background-color:black;color:lightgrey"> Wikipedia Film Search </h3>
+
+<h1>Wikipedia 2018 film search page</h1>
+
+
+<form action="/results" name="search" method="post">
+    <dl>
+        <p>Free text search:</p>
+        <dd><textarea rows="4" cols="100" name="query"></textarea>
+        <dd>Search in director: <input type="text" style="width:300px" name="director">
+        <dd>Search in starring: <input type="text" style="width:300px" name="starring">
+        <dd>Search in language: <input type="text" style="width:300px" name="language">
+        <dd>Search in country: <input type="text" style="width:300px" name="country">
+        <dd>Search in location: <input type="text" style="width:300px" name="location">
+        <dd>Search in time: <input type="text" style="width:300px" name="time">
+        <dd>Search in categories: <input type="text" style="width:300px" name="categories">
+        <dd>Runtime: min <input type="text" name="mintime"> max <input type="text" name="maxtime">
+        <dd><input type="submit" value="Search">
+    </dl>
+</form>
+</div>
+</body>
